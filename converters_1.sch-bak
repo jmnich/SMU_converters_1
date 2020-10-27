@@ -952,21 +952,8 @@ F 3 "~" H 1200 1250 50  0001 C CNN
 	1    1200 1250
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:CP_Small C1
-U 1 1 5FA0FFC8
-P 650 1250
-F 0 "C1" H 738 1296 50  0000 L CNN
-F 1 "6.8u 25V" H 738 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x5.9" H 650 1250 50  0001 C CNN
-F 3 "~" H 650 1250 50  0001 C CNN
-	1    650  1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 1050 1200 1050
-Wire Wire Line
-	650  1050 650  1150
 Connection ~ 1350 1050
 Wire Wire Line
 	1200 1150 1200 1050
@@ -974,12 +961,9 @@ Connection ~ 1200 1050
 Wire Wire Line
 	1200 1050 650  1050
 Wire Wire Line
-	650  1400 650  1350
-Wire Wire Line
 	1200 1400 1200 1350
 Wire Wire Line
 	650  950  650  1050
-Connection ~ 650  1050
 $Comp
 L Device:R_Small R1
 U 1 1 5FA0FFEA
@@ -1183,17 +1167,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 3500 2050 3500
 $Comp
-L Device:CP_Small C2
-U 1 1 5FA10055
-P 650 3300
-F 0 "C2" H 738 3346 50  0000 L CNN
-F 1 "6.8u 25V" H 738 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x5.9" H 650 3300 50  0001 C CNN
-F 3 "~" H 650 3300 50  0001 C CNN
-	1    650  3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5FA1005B
 P 1200 3300
@@ -1207,8 +1180,6 @@ F 3 "~" H 1200 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	650  3400 650  3500
-Wire Wire Line
 	650  3500 1200 3500
 Connection ~ 1350 3500
 Wire Wire Line
@@ -1217,12 +1188,9 @@ Connection ~ 1200 3500
 Wire Wire Line
 	1200 3500 1350 3500
 Wire Wire Line
-	650  3100 650  3200
-Wire Wire Line
 	1200 3100 1200 3200
 Wire Wire Line
 	650  3600 650  3500
-Connection ~ 650  3500
 $Comp
 L Diode:BAT54W D6
 U 1 1 5FA1007D
@@ -1402,17 +1370,6 @@ F 3 "" H 650 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR03
-U 1 1 5FA52331
-P 650 3100
-F 0 "#PWR03" H 650 2850 50  0001 C CNN
-F 1 "GNDA" H 655 2927 50  0000 C CNN
-F 2 "" H 650 3100 50  0001 C CNN
-F 3 "" H 650 3100 50  0001 C CNN
-	1    650  3100
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GNDA #PWR013
 U 1 1 5FA536C6
 P 1200 3100
@@ -1432,17 +1389,6 @@ F 1 "GNDA" H 1205 1227 50  0000 C CNN
 F 2 "" H 1200 1400 50  0001 C CNN
 F 3 "" H 1200 1400 50  0001 C CNN
 	1    1200 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR02
-U 1 1 5FA5CEBF
-P 650 1400
-F 0 "#PWR02" H 650 1150 50  0001 C CNN
-F 1 "GNDA" H 655 1227 50  0000 C CNN
-F 2 "" H 650 1400 50  0001 C CNN
-F 3 "" H 650 1400 50  0001 C CNN
-	1    650  1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2789,4 +2735,98 @@ F 3 "~" H 7350 4600 50  0001 C CNN
 	1    7150 4600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:LED D12
+U 1 1 5F912F6B
+P 4150 6200
+F 0 "D12" V 4189 6082 50  0000 R CNN
+F 1 "G" V 4098 6082 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 6200 50  0001 C CNN
+F 3 "~" H 4150 6200 50  0001 C CNN
+	1    4150 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 5F91618A
+P 4150 5150
+F 0 "R36" H 4209 5196 50  0000 L CNN
+F 1 "20k 1%" H 4209 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 5150 50  0001 C CNN
+F 3 "~" H 4150 5150 50  0001 C CNN
+	1    4150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R37
+U 1 1 5F917692
+P 4150 5850
+F 0 "R37" H 4209 5896 50  0000 L CNN
+F 1 "20k 1%" H 4209 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 5850 50  0001 C CNN
+F 3 "~" H 4150 5850 50  0001 C CNN
+	1    4150 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR0120
+U 1 1 5F91814F
+P 4150 5000
+F 0 "#PWR0120" H 4150 4850 50  0001 C CNN
+F 1 "+15V" H 4165 5173 50  0000 C CNN
+F 2 "" H 4150 5000 50  0001 C CNN
+F 3 "" H 4150 5000 50  0001 C CNN
+	1    4150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR0121
+U 1 1 5F91887A
+P 4150 6400
+F 0 "#PWR0121" H 4150 6500 50  0001 C CNN
+F 1 "-15V" H 4150 6550 50  0000 C CNN
+F 2 "" H 4150 6400 50  0001 C CNN
+F 3 "" H 4150 6400 50  0001 C CNN
+	1    4150 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 6400 4150 6350
+Wire Wire Line
+	4150 6050 4150 5950
+$Comp
+L Device:LED D11
+U 1 1 5F91489E
+P 4150 5500
+F 0 "D11" V 4189 5382 50  0000 R CNN
+F 1 "G" V 4098 5382 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 5500 50  0001 C CNN
+F 3 "~" H 4150 5500 50  0001 C CNN
+	1    4150 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 5350 4150 5250
+Wire Wire Line
+	4150 5650 4150 5700
+Wire Wire Line
+	4150 5000 4150 5050
+$Comp
+L power:GND #PWR0119
+U 1 1 5F9C9A92
+P 3950 5800
+F 0 "#PWR0119" H 3950 5550 50  0001 C CNN
+F 1 "GND" H 3955 5627 50  0000 C CNN
+F 2 "" H 3950 5800 50  0001 C CNN
+F 3 "" H 3950 5800 50  0001 C CNN
+	1    3950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5800 3950 5700
+Wire Wire Line
+	3950 5700 4150 5700
+Connection ~ 4150 5700
+Wire Wire Line
+	4150 5700 4150 5750
 $EndSCHEMATC
