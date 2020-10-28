@@ -338,7 +338,7 @@ F 2 "Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.3x3.24mm" H 3900 6450 50  0001 C
 F 3 "https://www.vishay.com/docs/60109/dfn.pdf" H 3900 6700 50  0001 C CNN
 F 4 "DFNA5002AT5" H 3900 6883 50  0000 C CNN "MPN"
 	4    3900 6750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L guowa_misc:ADA4522-2 U?
@@ -1316,7 +1316,7 @@ F 2 "Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.3x3.24mm" H 2600 7050 50  0001 C
 F 3 "https://www.vishay.com/docs/60109/dfn.pdf" H 2600 7300 50  0001 C CNN
 F 4 "DFNA5002AT5" H 2350 7250 50  0000 L CNN "MPN"
 	2    2600 7350
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C39
